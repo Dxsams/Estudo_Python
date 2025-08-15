@@ -22,7 +22,7 @@ for linha in produtos_file.read_text(encoding="utf-8").splitlines(): #Ler arquiv
     preco = float(preco)
     produtos_dict[nome] = round(preco*1.10,2) #aumento de 10$
     print("Dicionário de produtos atualizado:", produtos_dict)
-#salvar arquivod atualizado
+#salvar arquivo atualizado
 atualizado_file = produtos_dir / "Produtos_atualizados.txt"
 atualizado_text = '\n'.join(f"{nome} - {preco}" for nome, preco in produtos_dict.items())
 atualizado_file.write_text(atualizado_text, encoding="utf-8")
