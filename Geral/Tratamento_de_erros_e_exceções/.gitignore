@@ -1,0 +1,30 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pastas criadas pelo Python
+*.egg-info/
+dist/
+build/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de ambiente virtual
+venv/
+.env/
+
+# Arquivos de log
+*.log
+
+# Arquivos temporários de IDEs
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Arquivos gerados pelo sistema
+*.bak
+*.tmp

@@ -25,6 +25,10 @@ for linha in estoque_file.read_text(encoding="UTF-8").splitlines():
     preço = float(preço)
     estoque_dict[nome] = round(preço * 1.12,2)
 print("Dicionario atualizado com sucesso", estoque_dict)
+##estoque_dict = {
+#nome: round(float(preço) * 1.12, 2)
+#for nome, preço in (linha.split(" - ") for linha in estoque_file.read_text(encoding="utf-8").splitlines())}
+#Segundo modo
 #Salvar aquivo atualizado
 estoque_atualizado_file = Estoque_dir / "Estoque_atualizado.txt"
 estoque_atualizado_text = '\n'.join(f"{nome} - {preço}"for nome, preço in estoque_dict.items())
